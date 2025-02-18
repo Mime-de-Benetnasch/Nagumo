@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float velocidad = 5f;
+
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,17 @@ public class PlayerController : MonoBehaviour
     {
         //Movimiento del personaje en forma horizontal con las letras "A y D", recordar crear la variable publica float velocidad
        float velocidadX = Input.GetAxis("Horizontal")*Time.deltaTime*velocidad;
+
+       animator.SetFloat("movement", velocidadX*velocidad);
+
+       if (velocidadX < 0)
+       {
+          transform.localScale = new Vector3(-1, 1,1);
+       }
+       if (velocidadX > 0)
+       {
+          transform.localScale = new Vector3(1, 1, 1);
+       }
 
        Vector3 posicion = transform.position;
 

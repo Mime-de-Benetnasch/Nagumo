@@ -383,8 +383,8 @@ Transform:
   m_GameObject: {fileID: 812713962}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -1.83, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.01, y: -1.72, z: 0}
+  m_LocalScale: {x: 17.871355, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -423,6 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 8
+  animator: {fileID: 1995659464}
 --- !u!212 &1995659460
 SpriteRenderer:
   m_ObjectHideFlags: 0

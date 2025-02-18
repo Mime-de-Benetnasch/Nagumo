@@ -1,0 +1,20 @@
+# Archivos y carpetas de Unity que no deben subirse a Git
+
+# Ignorar la carpeta Library (se puede regenerar automáticamente)
+Library/
+
+# Ignorar carpetas temporales y logs
+Temp/
+Logs/
+
+# Configuraciones de usuario (no necesarias para el repo)
+UserSettings/
+
+# Cache de paquetes (se puede descargar automáticamente)
+Packages/*
+!Packages/manifest.json
+!Packages/packages-lock.json
+
+# Builds y archivos generados
+Build/
+Builds/

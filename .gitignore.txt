@@ -1,0 +1,8 @@
+# Ignorar la carpeta Library
+Library/
+Temp/
+Logs/
+UserSettings/
+Packages/*
+!Packages/manifest.json
+!Packages/packages-lock.json
